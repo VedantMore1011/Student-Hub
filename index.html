@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Hub | Learn. Build. Grow.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">Student<span>Hub</span></div>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <nav id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#courses">Courses</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="tagline">YOUR DIGITAL LEARNING SPACE</p>
+                <h1>Learn. <span>Build.</span> Grow.</h1>
+                <p class="hero-text">
+                    Student Hub is a simple platform that helps students explore
+                    courses, develop technical skills and build their future.
+                </p>
+                <a class="btn" href="#courses">Explore Courses</a>
+            </div>
+            <div class="hero-card">
+                <div class="circle">🎓</div>
+                <h3>Student Hub</h3>
+                <p>Learn skills. Create projects. Shape your career.</p>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="section-heading">
+                <p>ABOUT US</p>
+                <h2>Everything a student needs in one place</h2>
+            </div>
+            <div class="about-grid">
+                <div>
+                    <p>
+                        Student Hub is a static educational website designed for
+                        students who want to improve their knowledge and technical
+                        skills. It provides a simple space to discover learning
+                        areas, understand important skills and stay motivated.
+                    </p>
+                    <p>
+                        This website is created using HTML, CSS and JavaScript and
+                        can be deployed on a cloud virtual machine using RDP or SSH.
+                    </p>
+                </div>
+                <div class="stats">
+                    <div class="stat"><strong>3+</strong><span>Learning Areas</span></div>
+                    <div class="stat"><strong>5+</strong><span>Core Skills</span></div>
+                    <div class="stat"><strong>100%</strong><span>Student Focused</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="courses" class="section light">
+            <div class="section-heading">
+                <p>LEARNING</p>
+                <h2>Popular Courses</h2>
+            </div>
+            <div class="card-grid">
+                <article class="card">
+                    <div class="icon">💻</div>
+                    <h3>Web Development</h3>
+                    <p>Learn HTML, CSS and JavaScript to create modern websites.</p>
+                    <span class="badge">Beginner</span>
+                </article>
+                <article class="card">
+                    <div class="icon">☕</div>
+                    <h3>Java Programming</h3>
+                    <p>Build programming fundamentals, OOP concepts and applications.</p>
+                    <span class="badge">Core Skill</span>
+                </article>
+                <article class="card">
+                    <div class="icon">🗄️</div>
+                    <h3>Database Management</h3>
+                    <p>Understand SQL, tables, relationships and database design.</p>
+                    <span class="badge">Practical</span>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="section-heading">
+                <p>DEVELOP YOURSELF</p>
+                <h2>Skills for the Future</h2>
+            </div>
+            <div class="skills-list">
+                <div class="skill">
+                    <div class="skill-top"><span>Programming</span><span>85%</span></div>
+                    <div class="bar"><div style="width:85%"></div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-top"><span>Problem Solving</span><span>80%</span></div>
+                    <div class="bar"><div style="width:80%"></div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-top"><span>Web Development</span><span>75%</span></div>
+                    <div class="bar"><div style="width:75%"></div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-top"><span>Database</span><span>70%</span></div>
+                    <div class="bar"><div style="width:70%"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="section-heading">
+                <p>GET IN TOUCH</p>
+                <h2>Contact Student Hub</h2>
+            </div>
+            <form id="contactForm" class="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+                <p id="formMessage"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <strong>StudentHub</strong>
+            <p>Learn. Build. Grow.</p>
+        </div>
+        <p>© <span id="year"></span> Student Hub. Mini Project.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
